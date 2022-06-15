@@ -1,0 +1,757 @@
+HTML 
+O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.
+
+CSS
+CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.
+
+PARTE 1:
+
+A PRIMEIRA PÁGINA DA WEB
+
+Marcação do primeiro texto:
+
+Uma introdução ao HTML e às suas tags
+Como definir o título e os parágrafos de um texto
+Utilizando as tags <h1> e <p>, respectivamente
+Como dar destaque para algumas informações do texto, deixando-as em negrito, utilizando a tag <strong>
+Como dar ênfase para algumas informações do texto, deixando-as em itálico, utilizando a tag <em>
+
+Tipos de tag (<tag>)
+
+<h1> = Destacar um título
+
+<p> = Início e fim de um parágrafo
+
+<strong> = Marcação de destaque
+
+<em> = Marcação de ênfase
+
+Separando o conteúdo e informações:
+
+DOCTYPE (<DOCTYPE>)
+
+A tag DOCTYPE serve para informar ao navegador qual versão do HTML estamos usando.
+
+HTML (<html>)
+
+É uma tag de conteúdo. Serve para marcarmos tudo que é, dentro desta página, o HTML que vai ser renderizado no navegador.
+Como essa tag é de conteúdo, ela precisa abrir na primeira linha, e na última linha, a última informação vai ser o fechamento dessa tag /html.
+
+META (<meta>) = informação que quero passar para o navegador (head)
+
+Ela passa informações para o navegador dentro dela, é uma tag de conteúdo e colocamos uma propriedade dentro dela.
+
+ATRIBUTO "CHARSET" (charset="UTF-8")
+
+Aponta para o navegador que estamos usando um dicionário que tem acentos e cedilha. Conjunto de caracteres, o characters set, onde escolhemos o dicionário UTF8. Ele tem as linguagens Unicode, ASCII, com a maioria das linguagens de trabalhos do dia-dia.
+
+PROPRIEDADE "LANG" (lang="pt-br")
+
+Estende a página em português, Se algum usuário que não entende português estiver lendo a página, o navegador vai oferecer a opção de traduzir. 
+
+TITLE (<title>Texto</title>) = informação que quero passar para o navegador (head)
+
+Define o texto de título da página.
+
+HEAD cabeça
+
+Informações que estamos passando para o navegador.
+
+BODY corpo
+
+Informações que queremos exibir na página.
+
+Diferença de HEAD E BODY:
+
+O conteúdo fica no body e informações no head. Na estrutura correta do HTML, inserimos as informações que queremos passar para o navegador no head e as tags de conteúdo no body.
+
+O QUE APRENDEMOS?
+A definir a estrutura básica do HTML
+Com a tag DOCTYPE, definimos qual versão do HTML estamos utilizando
+A tag <html>, que marca o conteúdo a ser renderizado no navegador
+Dentro desta tag, podemos definir a linguagem da página, através da propriedade lang
+Como passar as informações do encoding da nossa página para o navegador, através da tag <meta> e da propriedade charset
+Como definir o título de uma página, através da tag <title>
+Como separar as informações que estão sendo passadas para o navegador, utilizando a tag <head>
+Como separar o conteúdo da página, utilizando a tag <body>
+
+
+Trabalhando com CSS:
+
+Propriedade STYLE (style="comando")
+
+Define o estilo do elemento. Dentro do style e entre aspas deve-se inserir o que deseja alterar.
+
+Exemplo: style="font-size: 20px", estou definindo o tamanho da minha fonte.
+Exemplo: style= "text-align: center", estou definido o a localização do meu texto
+
+Para fazer essa divisão entre duas apresentações, entre os dois itens que apresentei, devo colocar um ";" e assim conseguigo fazer a separação.
+
+Exemplo: style="font-size: 20px; text-align: center"
+
+Usando o caractere ":" (text-align: center)
+
+serve para atribuir um valor a uma propriedade.
+
+A maneira correta para declarar um CSS que pode ser usado em várias páginas diferentes é:
+Só com um arquivo externo, e fazendo referência a esse arquivo, podemos usar o mesmo CSS em páginas diferentes.
+
+MUDANDO A COR:
+
+BACKGROUND (exemplo: "background: #CCCCCC)
+
+Background é o que define tudo que será o fundo do elemento. Podemos colocar cor, imagem, várias propriedades.
+
+OBS: Uma coisa importante a se falar sobre o CSS é que idealmente, em um bom padrão de projeto, nosso CSS corresponde à mesma estrutura do HTML. Como o body vem antes do parágrafo, vamos também aqui adicionar antes do parágrafo. Assim nosso código fica mais organizado.
+
+Como funciona o estilo em cascata do CSS?
+
+Tudo que eu adiciono no elemento pai reflete nos elementos filhos. Como é uma folha de estilos em cascata, a cascata vai descendo, e o que eu faço no elemento pai reflete para o elemento filho.
+
+Nesta aula, aprendemos:
+
+A mexer na apresentação dos textos
+No alinhamento deles (text-align)
+No tamanho da fonte (font-size)
+Na cor de fundo (background)
+Na cor do texto (color)
+CSS inline
+Na linha onde temos a nossa tag, adicionamos a propriedade do CSS
+A tag <style>
+Dentro da tag, podemos colocar marcações de CSS referentes aos elementos que temos no nosso HTML
+A apresentação do CSS com um arquivo externo
+Como funciona o estilo em cascata do CSS
+Como importar um arquivo externo de CSS dentro da nossa página HTML
+Como representar cores no CSS
+Através do nome da cor
+Através do seu hexadecimal
+Através do seu RGB
+
+
+Estilizando imagens:
+
+Como fazemos para adicionar uma imagem no nosso conteúdo?
+
+<img src="nomedaimagem.tipodaimagem">
+
+A tag "img" tem a propriedade "src", onde adicionamos o endereço.
+
+Qual a propriedade que usamos para alterar a largura do elemento?
+
+width
+
+É a propriedade que devemos manipular para alterar a largura do elemento.
+
+Nesta aula, aprendemos:
+
+Como reestruturar o nosso código, removendo os CSS inline e colocando-os no arquivo CSS externo
+Como criar um identificador para marcar especificamente um elemento
+Como fazer referência a esse identificador no CSS
+Como adicionar uma imagem à nossa página
+Como ajustar a altura do elemento, através da propriedade height
+Como ajustar a largura do elemento, através da propriedade width
+Como ajustar o espaçamento interno do elemento, através da propriedade padding
+Como ajustar o espaçamento externo do elemento, através da propriedade margin
+Como se comporta um time de front-end hoje em dia
+
+
+
+Listas e divisões de conteúdo:
+
+Trabalhando com listas
+
+Para criar uma nova seção, ou seja, outra parte do site, vamos colocar outro título. Seguindo a sequência, com isso devemos usar a tag "h2" = 
+(<h2></h2>), o "h2" começa esse novo conteúdo. Segue o mesmo padrão para título "pricipal" da página.
+
+Tags
+
+UL = unordered list (<ul></ul>)
+
+Uma lista sem ordem
+
+OL = ordered list (<ol></ol>)
+
+Uma lista ordenada
+
+LI 
+
+Marca cada item da lista
+Ínicia em cada uma das linhas e termina ao fim daquele conteúdo, daquele item.
+
+OBS:
+As classes no CSS servem para marcarmos itens, para posteriormente colocarmos estilo em cada um deles, só que são repetíveis. Ou seja, podemos marcar todos os nossos itens com a mesma classe.
+
+Assim como no identificador, em que adiciono a propriedade id e dou um nome para ela, nas classes faço a mesma coisa. Adiciono a propriedade “class” e entre aspas o nome dela.
+Podemos colocar o mesmo nome em todos os itens. Essa vai ser a classe que usaremos para marcar todos esses nossos itens.
+
+A tag para a lista é a ul e cada item da lista precisa ser marcado com um li.
+
+DIVISÕES DE CONTEÚDO
+
+Tag de divisão
+
+<div></div>
+
+As divisões têm por padrão não interferir na apresentação visual do nosso conteúdo. Elas servem para marcarmos nosso conteúdo, e, a partir do CSS fazermos os efeitos que quisermos.
+
+Adicionar espaçamento interno  para todos os lados:
+
+Padding
+
+comportamento de uma tag ocupar a largura inteira da página é chamado “block”. Ele bloqueia o conteúdo daquela linha. Todos os itens da nossa linha têm o comportamento block. Uma imagem não bloqueia o conteúdo, ela deixa que existam outros na lateral, e esse tipo de conteúdo é considerado inline.
+A diferença entre eles é que mesmo que eu diminua o tamanho, diminua a largura de um elemento block, ele vai sempre ocupar aquela linha, mesmo preenchendo só metade.
+m elemento inline não me deixa alterar, por exemplo, o espaçamento externo e interno dele.
+Para isso, existe uma terceira característica, quando o elemento possui as duas condições. Ele é inline e block ao mesmo tempo. Ou seja, ele bloqueia uma largura, mas essa largura é fixa. Sou eu que dou o tamanho. E ele me deixa também mexer na largura e nos espaçamentos interno e externo.
+
+Quando usamos uma class no nosso código?
+Quando queremos repetir o CSS
+A class serve para replicarmos a aplicação do nosso CSS, sem precisar copiar e colá-lo em vários elementos. Aplicamos a classe para isso.
+
+Nesta aula, aprendemos:
+
+A trabalhar com listas não-ordenadas e listas ordenadas
+Para cada um dos itens da lista, utilizamos a tag <li>
+O conceito das classes no CSS
+Elas servem para marcar itens, que são repetíveis
+Como referenciar uma classe no CSS
+Divisões de conteúdo, utilizando a tag <div>
+Os comportamentos inline e block
+
+Finalizando a página:
+
+Tag do cabeçalho da página
+
+<header></header>
+
+Header é o cabeçalho da página, e fica dentro do conteúdo, e o head é a tag padrão do HTML que serve para passarmos a informação para o navegador. Não vamos confundir as coisas.
+
+
+PARTE 2:
+
+Criando uma nova página
+
+Dadas as seguintes tags HTML:
+
+1) <!DOCTYPE>
+
+2) <html>
+
+3) <head> e <body>
+
+Na estrutura de uma página HTML, qual das tags acima é necessária?
+Todas as tags mencionadas são fundamentais na estrutura de uma página.
+
+O que fazer quando o seu site tem um logo, e ele é a primeira coisa que você quer exibir para os seus usuários?
+
+<h1>
+	<img src="">
+</h1>
+
+A tag <h1> envolve a tag da imagem, que é onde buscamos o conteúdo que será exibido.
+
+Listas (ordenada e não ordenada)
+
+Lista ordenada - que o primeiro item é mais importante que o segundo, que é mais importante que o terceiro.
+Lista não ordenada - onde a ordem dos links não importa.
+
+Nesta aula, vimos:
+
+Uma introdução ao projeto do treinamento
+Uma revisão do conteúdo aprendido no treinamento anterior
+Uma revisão da base de uma página HTML
+Lista HTML não ordenada
+
+Navegação entre páginas:
+
+Tag
+
+<a></a> (<a href="site">conteúdo</a>)
+A tag <a> serve justamente como uma âncora, um link, que vai nos levar para outro ponto na internet. É um link para navegação dentro desse contéudo
+
+Posicionamento dos elementos:
+
+o que que o reset CSS faz?
+
+Ele é um arquivo de CSS, que limpa tudo o que o navegador cria.
+
+Por que precisamos tirar os estilos que o navegador cria automaticamente?
+
+Para que o nosso estilo criado não seja influenciado pelo estilo que o navegador adiciona.
+O navegador cria o estilo para todas as tags que ele acha adequadas, então precisamos removê-lo, para que o estilo que criamos não seja influenciado pelo estilo que o navegador adiciona.
+
+Para que serve o posicionamento absolute?
+
+Para mudar a posição do ponto inicial que ele se encontra.
+Com o position: absolute, eu consigo posicionar meu elemento em qualquer lugar da página.
+
+Qual a melhor técnica para alinhar uma div ao centro?
+
+Usar o cálculo da margin automático.
+Delegamos para o navegador fazer a conta de calcular a largura que resta, dividir por dois, e adicionar metade em cada um dos lados.
+
+Nesta aula, aprendemos:
+
+Como remover os estilos que o navegador cria automaticamente
+Como funciona os posicionamentos static, relative e absolute dos elementos
+Como posicionar o cabeçalho da nossa página
+
+A tag section:
+
+Por que devemos usar as tags semânticas, como a <main>?
+
+Para deixar o código mais legível, tanto para nós, quanto para o navegador.
+As tags semânticas fazem com que o navegador entenda melhor o nosso conteúdo, e com isso carregue melhor a nossa página.
+
+Quando tenho uma lista com itens complexos, qual a formatação correta?
+
+<li>
+    <h2>Cabelo</h2>
+    <p>R$ 40,00</p>
+</li>
+
+Um item de lista, em uma lista complexa, pode ter qualquer conteúdo.
+
+Como se comporta um elemento que tem o seu display com o valor inline-block?
+
+Com o tamanho do seu conteúdo, mas regulável
+O tamanho pode ser ajustado, tanto na largura, quanto na altura.
+
+Qual o comportamento do elemento quando adiciono espaçamento interno, o padding?
+
+O elemento aumenta o seu tamanho. Quando declaro que existe um espaçamento interno, estou aumentando o conteúdo.
+
+Nesta aula, aprendemos:
+
+A tag main, para o conteúdo principal da nossa página
+A criar listas complexas, com títulos, imagens e parágrafos
+A utilizar o inline-block
+A praticar e estilizar o conteúdo principal da nossa página
+
+Lidando com bordas:
+
+Tipos de Borda;
+
+Já os estilos da border CSS podem aparecem em formato dos códigos:
+none: sem borda;
+hidden: equivalente a none;
+dotted: borda pontilhada;
+dashed: borda tracejada;
+solid: borda contínua;
+double: borda dupla;
+groove: borda entalhada;
+ridge: borda em ressalto;
+
+Quando adiciono a seguinte declaração de borda: border: 3px #000000 solid;
+Qual o comportamento esperado?
+Uma borda solida, com 3 pixels de largura, entre o padding e a margin
+Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin.
+
+Como usar o CSS para fazer os desenhos de cantos arredondados das bordas?
+Usando a propriedade border-radius
+Com a propriedade border-radius, podemos desenhar o canto arredondado dos elementos.
+
+Nesta aula, aprendemos:
+
+Através do CSS, aplicar bordas nos elementos.
+Os diferentes tipos de bordas.
+A deixar a borda arredondada.
+
+Pseudo-classes CSS:
+
+Em quais elementos consigo alterar o seu visual através do seu comportamento com CSS?
+
+Todos os elementos
+Em todos os elementos do HTML consigo mapear o comportamento com CSS e alterar o visual do elemento.
+
+Quando podemos utilizar o comportamento do hover em um elemento?
+Quando queremos realçar alguma característica quando o mouse do usuário estiver por cima do elemento.
+No hover, mapeamos o comportamento do mouse por cima do elemento, e podemos usar isso para destacar visualmente o elemento em questão.
+
+Nesta aula, aprendemos:
+
+Algumas pseudo-classes CSS
+hover, quando o usuário passa o cursor sobre o elemento
+active, quando um elemento está sendo ativado pelo usuário
+A mudar a cor do texto e/ou da borda de um elemento, quando o usuário passar o cursor sobre o mesmo
+A mudar a cor da borda de um elemento, quando o mesmo estiver sendo ativado pelo usuário
+
+Finalizando a página de produtos:
+
+Como adicionamos uma imagem de fundo em um elemento?
+
+Com o valor url no background do elemento
+No CSS, ao referenciarmos o endereço de uma imagem, usamos o valor url.
+
+Site de elementos:
+unicode-table.com
+
+Que tipos de caracteres especiais podemos usar no nosso texto?
+Podemos usar qualquer caractere do Unicode
+Os caracteres Unicode estão disponíveis para serem usados como um complemento ao nosso texto.
+
+Nesta aula, aprendemos:
+
+A tag footer, para o rodapé da nossa página
+Que, com CSS, podemos colocar uma imagem de fundo em um elemento
+Quando colocamos uma imagem de fundo em um elemento, o CSS, por padrão, copia e cola a imagem diversas vezes até ocupar todo o espaço do elemento
+A tabela Unicode
+
+PARTE 3:
+
+Criando uma nova página:
+
+Para decidir quando devemos usar um formulário nas nossas páginas, alguns motivos podem ser analisados:
+
+1) Quando queremos enviar os dados para um servidor
+
+2) Quando queremos capturar informações que o usuário digitar
+
+3) Quando queremos enviar os dados para uma outra página
+
+Quais realmente podem ser levados em consideração?
+Todos os motivos podem ser levados em consideração
+Um formulário pode servir para, entre outras coisas, enviar os dados para uma outra página, capturar informações que o usuário digitar e enviar dados para um servidor.
+
+Nesta aula, vimos:
+
+Uma revisão do conteúdo aprendido no treinamento anterior
+Uma introdução ao projeto do treinamento
+A criação da página de contato
+Um pouco sobre os formulários
+
+Começando um formulário:
+
+Qual a tag que usamos para fazer um par com um <input>, para termos um título para aquela entrada de dados?
+<label>
+
+A tag <label> é uma etiqueta para a entrada de dados, para o <input>.
+
+Qual propriedade devo alterar para que os meus <input> tenham um espaço entre a borda e o conteúdo?
+A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.
+
+Nesta aula, aprendemos:
+
+A criar um formulário HTML
+A tag que o representa é a <form>
+A tag <input>, para a entrada de dados do usuário
+A criar uma etiqueta para o input, com a tag <label>
+A conectar um input com o seu label
+Colocamos um id para o input e associamos esse id ao atributo for do label
+Alguns tipos de input, como text e submit
+Que label possui o display inline e o input possui display inline-block
+A estilizar o nosso formulário
+
+Tipos de campos diferentes:
+
+Qual a propriedade de um input do tipo radio que preciso criar para que eles façam parte do mesmo grupo?
+
+A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado.
+
+Qual a melhor abordagem quando temos uma configuração de CSS aplicada para um item e queremos replicar ela para um item parecido?
+Usar os seletores dos itens separados por vírgula e criar uma classe
+
+Essa é uma forma simples de fazermos a mesma configuração de CSS funcionar para os dois itens, sendo eles seletores dos elementos, de ids ou de classes.
+Quando temos um estilo que pode ser repetido, uma excelente estratégia é extrair isso para uma classe e usar a classe para aplicar esses estilos nos nossos elementos.
+
+Considerando o código abaixo:
+
+<p class="paragrafo">
+
+p {
+    color: blue;
+}
+
+p.paragrafo {
+    color: red;
+}
+
+.paragrafo {
+    color: purple;
+}
+
+Qual será a cor final do meu parágrafo?
+O seletor p.paragrafo é o mais forte, e a cor aplicada é a vermelha (red).
+
+No último vídeo, foi vista a tag <option>. Qual a sua utilidade?
+Para criarmos os itens selecionáveis de um <select>
+A estrutura da tag <select> é composta de um ou mais <option>.
+
+Nesta aula, vimos:
+
+O textarea, para entradas de texto de mais de uma linha
+O input do tipo radio
+Como agrupar vários input do tipo radio, impedindo que mais de um input seja selecionado
+O input do tipo checkbox
+Que podemos criar um input dentro de um label, assim associando-os
+Mais estilizações para a nossa página
+Como funciona a hierarquia no CSS
+O select, que é seletor, um campo de seleção de um item, e o option, que representa cada opção do seletor
+
+Melhorando a semântica:
+
+Por quais motivos é importante usar os tipos corretos de <input> para os usuários que acessam a página via celular?
+
+Para facilitar a vida do usuário e para termos dados mais corretos no formulário
+
+É extremamente importante facilitarmos a vida dos nossos usuários sempre e é muito melhor termos dados corretos quando temos o nosso formulário preenchido 
+
+Como transformamos um campo comum em um de preenchimento obrigatório?
+Adicionando a propriedade required
+Quando adicionamos a propriedade required, o navegador nos ajuda a validar se aquele campo está preenchido.
+
+
+Qual tag usamos para marcar um título de um grupo de campos do formulário?
+
+É a tag <legend> que usamos para um título de um grupo de campos em qualquer formulário.
+
+Nesta aula, aprendemos:
+
+Alguns tipos de inputs para celular: email, tel, number, password, date, datetime, month e search
+Como não permitir que um campo não seja preenchido, através do atributo required
+Como exibir uma sugestão de preenchimento para os campos, através do atributo placeholder
+Como deixar uma opção marcada por padrão nos nossos input radio e checkbox, através do atributo checked
+Como estruturar melhor o nosso código com fieldset e legend
+Como adicionar uma alternativa à imagem, descrevendo-a, com o atributo alt
+
+CSS avançado:
+
+Como configurar a transição visual de um elemento, que dure 3 segundos?
+transition: 3s;
+Utilizamos a propriedade transition para prover uma transição visual de um elemento.
+
+Qual propriedade do CSS usamos para aumentar um elemento proporcionalmente?
+transform: scale();
+Utilizamos a propriedade transform: scale() para aumentar um elemento proporcionalmente.
+
+Nesta aula, aprendemos:
+
+Como estilizar o botão de envio de formulário
+A realizar transições nos nossos elementos, com a propriedade CSS transition
+A modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento, através da propriedade CSS cursor
+A realizar transformações nos nossos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo, através da propriedade CSS transform
+
+Estrutura de tabelas:
+
+Qual tag uso para criar linhas em uma tabela?
+<tr>
+Utilizamos a tag <tr> para marcar uma linha de uma tabela.
+
+Como dividir uma tabela de forma mais semântica?
+Usando as tags <thead>, <tbody> e <tfoot>
+As tags <thead>, <tbody> e <tfoot> ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.
+
+Nesta aula, aprendemos:
+
+A criar uma tabela HTML
+A tag table, que representa a tabela
+A tag tr, que representa a linha da tabela
+A tag td, que representa a célula da tabela
+A tag thead, que representa o cabeçalho da tabela
+A tag tbody, que representa o corpo da tabela
+A tag th, que representa a célula do cabeçalho da tabela
+A tag tfoot, que representa o rodapé da tabela
+A estilizar a tabela
+
+PARTE 4:
+
+Adaptando a página inicial:
+
+Só devemos usar <section> quando o bloco for semântico
+Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma <section>.
+
+Ao criar um estilo qualquer, qual o melhor padrão para marcar o nosso conteúdo, ao criar uma classe?
+Ser específico e genérico ao mesmo tempo.
+Um balanço é a melhor alternativa. Nem tão específica, para poder repetir as classes, e nem tão genérica, para poder não precisar combinar classes.
+
+Para que serve a propriedade float?
+Descolar o elemento na lateral e deixar os outros elementos ao redor.
+Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele.
+
+Nesta aula, aprendemos:
+
+A ajustar a página principal para utilizar os mesmos padrões da página de produtos
+Medidas proporcionais com CSS
+Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+Como limpar o float, com a propriedade clear do CSS
+
+Conteúdo externo:
+
+Analise os seguintes benefícios de usar fontes externas:
+
+1) Padronizar o nosso conteúdo em todos os navegadores
+
+2) Deixar o site mais bonito, com visual mais exclusivo.
+
+3) Termos mais alternativas de fonte
+
+Quais das afirmativas acima realmente são benefícios de usar fontes externas?
+
+Todas as afirmativas
+
+Usar fontes externas é uma alternativa muito funcional para termos mais opções, que deixam o nosso site mais bonito e exclusivo, e também padronizado em todos os navegadores.
+
+Exemplo no código:
+
+
+<section class="mapa">
+    <h3 class="titulo-principal">"Nosso estabelecimento</h3>
+    <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
+    <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.448598130907!2d-46.634653385542414!3d-23.588239368469353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1580916426151!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</section>
+
+Ao recarregarmos o navegador, o mapa já estará visível na página. A tag <iframe> é específica para abrir "janelas" em nosso site, com proporções definidas e endereço da informação. Podemos fazer o msemo com outros serviços que apresentem essa possibilidade de compartilhamento de informações, como vídeos, fotos de Instagram, páginas de Facebook e outros. Os acessos externos que complementam a página são, geralmente, feitos pela tag <iframe>.
+
+Nesta aula, aprendemos:
+
+A utilizar fontes externas nas nossas páginas
+Como incorporar um mapa à nossa página
+Como incorporar um vídeo à nossa página
+
+Melhorando o CSS:
+
+Como fazer um degradê de cinco cores em um elemento?
+
+background: linear-gradient(gray, yellow, red, orange, blue)
+
+Usamos dentro do mesmo parênteses, separando as cores por vírgulas.
+
+Como criar um elemento no HTML antes do meu item, através do CSS?
+Com a propriedade :before
+Quando queremos criar um elemento na página, via CSS, antes do elemento do HTML, usamos a propriedade :before.
+
+Nesta aula, aprendemos:
+
+A melhorar mais ainda a semântica da página principal, com novas divisões, classes, etc
+Novas pseudo-classes
+Como aplicar um background gradiente na página
+Pseudo-elementos
+
+Selecionando qualquer coisa:
+
+Usando essa estrutura
+
+<h2>
+<section>
+    <h2>
+    <p>
+    </p>
+    <h2>
+
+Como fazemos para selecionar o último <h2>?
+section > p + h2
+O último h2 é filho direto da section e irmão do p.
+
+Como usar as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px?
+
+width: calc( (100% / 3) - 10px )
+Essa é uma forma mais complexa, não precisa dessa primeira conta!
+
+width: calc( 33% - 10px )
+Essa é a forma mais direta!
+
+Nesta aula, aprendemos:
+
+Seletores avançados CSS
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+
+main > p {
+}
+
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+
+img + p {
+}
+
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+
+img ~ p {
+}
+
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+
+main p:not(#missao) {
+}
+
+Como fazer contas com CSS, com a propriedade calc.
+
+Opacidade e sombra:
+
+Quais tipos de elementos podem receber uma camada de opacidade?
+Todos os elementos e todas as cores podem ter uma camada de opacidade.
+
+Como fazer uma sombra interna em um elemento?
+
+box-shadow: inset 0 0 5px black;
+Sombra interna, preta, com 5px de espalhamento.
+
+Nesta aula, aprendemos:
+
+Como manipular a opacidade dos elementos, com a propriedade CSS opacity
+Como manipular a opacidade das cores
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow
+
+Design responsivo:
+
+Como marcar um elemento para que ele seja apresentado de outra forma, em uma tela de até 480px?
+
+Dentro do @media (max-width: 480px) {}
+
+É dentro dessa media query que criamos um estilo visual que compreenda telas de até 480px.
+
+Qual a principal tática para não perder muito tempo criando layouts responsivos?
+
+Usar medidas proporcionais para tudo.
+ hoje a melhor forma de criar qualquer conteúdo.
+
+ Criar um layout fluido que se adapte sempre.
+ É uma forma perfeita de evitar retrabalho.
+
+ Nesta aula, aprendemos:
+
+Design responsivo: como ajustar o estilo da nossa página de acordo com o tamanho da tela do dispositivo que a acesse
+Meta tag de Viewport
+Media Queries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
